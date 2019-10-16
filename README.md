@@ -1,4 +1,6 @@
 ## Seed code - Boilerplate for step 7 - Keep Note Assignment
+`Note : 
+KeepNote - Step 7 assignment is an optional one. please check with your mentor for any queries.`
 
 ### Assignment Step Description
 

@@ -1,0 +1,12 @@
+.note-form-container{
+    width:60vw;
+    display: flex;
+    flex-direction: column;
+}
+.saveButton{
+    background-color: rgb(32, 144, 178);
+    width: 10%;
+  }
+.checkbox{
+    margin-left: 2em;
+}

@@ -1,0 +1,22 @@
+.note-expansion-panel{
+    width:60vw;
+    margin:10vh 20vw;
+}
+  
+.note-form-field{
+    display: flex;
+    flex-direction: column;
+}
+.button-css{
+    background-color: rgb(32, 144, 178);
+    width: 10%;
+  }
+.note-field{
+    width: 70%;
+}
+.note-title{
+    color: blue;
+}
+.checkbox{
+    margin-left: 3em;
+}

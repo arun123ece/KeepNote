@@ -1,5 +1,20 @@
 package com.stackroute.keepnote.controller;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.stackroute.keepnote.model.Reminder;
 import com.stackroute.keepnote.service.ReminderService;
 
 /*
@@ -11,6 +26,8 @@ import com.stackroute.keepnote.service.ReminderService;
  * is equivalent to using @Controller and @ResposeBody annotation
  */
 
+@RestController
+@CrossOrigin(origins = {"http://localhost:4200"})
 public class ReminderController {
 
 	/*
@@ -31,8 +48,11 @@ public class ReminderController {
 	 * Constructor-based autowiring) Please note that we should not create any
 	 * object using the new keyword
 	 */
+	@Autowired
+	ReminderService reminderServiceImpl;
 
 	public ReminderController(ReminderService reminderService) {
+		this.reminderServiceImpl = reminderService;
 	}
 
 	/*
@@ -47,6 +67,16 @@ public class ReminderController {
 	 * This handler method should map to the URL "/api/v1/reminder" using HTTP POST
 	 * method".
 	 */
+	@PostMapping("/api/v1/reminder")
+	public ResponseEntity<?> createReminder(@RequestBody Reminder reminder){
+
+		try {
+			return new ResponseEntity<Reminder>(reminderServiceImpl.createReminder(reminder), HttpStatus.CREATED);
+
+		} catch (Exception e) {
+			return new ResponseEntity<String>("Creation reminder Failed", HttpStatus.CONFLICT);
+		}
+	}
 
 	/*
 	 * Define a handler method which will delete a reminder from a database.
@@ -59,6 +89,18 @@ public class ReminderController {
 	 * This handler method should map to the URL "/api/v1/reminder/{id}" using HTTP Delete
 	 * method" where "id" should be replaced by a valid reminderId without {}
 	 */
+	@DeleteMapping("/api/v1/reminder/{id}")
+	public ResponseEntity<?> deleteReminder(@PathVariable String id){
+
+		try {
+			if(reminderServiceImpl.deleteReminder(id)) {
+				return new ResponseEntity<String>("Reminder Deleted", HttpStatus.OK);
+			}
+			return new ResponseEntity<String>("Reminder Not Found", HttpStatus.NOT_FOUND);
+		}catch (Exception e) {
+			return new ResponseEntity<String>("User Not Found", HttpStatus.NOT_FOUND);
+		}
+	}
 
 	/*
 	 * Define a handler method which will update a specific reminder by reading the
@@ -71,6 +113,20 @@ public class ReminderController {
 	 * This handler method should map to the URL "/api/v1/reminder/{id}" using HTTP PUT
 	 * method.
 	 */
+	@PutMapping("/api/v1/reminder/{id}")
+	public ResponseEntity<?> updateReminder(@RequestBody Reminder reminder, @PathVariable String id){
+
+		try {
+			if(null != reminderServiceImpl.updateReminder(reminder, id)) {
+				return new ResponseEntity<Reminder>(reminder, HttpStatus.OK);
+			}else {
+				return new ResponseEntity<String>("Reminder Not Found", HttpStatus.NOT_FOUND);
+			}
+		}
+		catch (Exception e) {
+			return new ResponseEntity<String>("Reminder Not Found", HttpStatus.NOT_FOUND);
+		}
+	}
 
 	/*
 	 * Define a handler method which will show details of a specific reminder. This
@@ -82,6 +138,17 @@ public class ReminderController {
 	 * This handler method should map to the URL "/api/v1/reminder/{id}" using HTTP GET method
 	 * where "id" should be replaced by a valid reminderId without {}
 	 */
+	@GetMapping("/api/v1/reminder")
+	public ResponseEntity<?> getReminder(){
+
+		try {
+			List<Reminder> reminderList = reminderServiceImpl.getAllReminders();
+			return new ResponseEntity<List<Reminder>>(reminderList, HttpStatus.OK);
+		}
+		catch (Exception e) {
+			return new ResponseEntity<String>("User Not Found", HttpStatus.NOT_FOUND);
+		}
+	}
 
 	/*
 	 * Define a handler method which will get us the all reminders.
@@ -92,4 +159,19 @@ public class ReminderController {
 	 * 
 	 * This handler method should map to the URL "/api/v1/reminder" using HTTP GET method
 	 */
+	@GetMapping("/api/v1/reminder/{id}")
+	public ResponseEntity<?> getReminderById(@PathVariable String id){
+
+		try {
+			Reminder reminder =  reminderServiceImpl.getReminderById(id);
+			if(null != reminder) {
+				return new ResponseEntity<Reminder>(reminder, HttpStatus.OK);
+			}
+			return new ResponseEntity<String>("Reminder Not Found", HttpStatus.NOT_FOUND);
+		}
+		catch (Exception e) {
+			return new ResponseEntity<String>("User Not Found", HttpStatus.NOT_FOUND);
+		}
+	}
 }
+

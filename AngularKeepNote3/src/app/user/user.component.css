@@ -1,0 +1,8 @@
+.editButton{
+    background-color: rgb(32, 144, 178);
+    width: 10%;
+}
+.deleteButton{
+    background-color: rgb(236, 5, 5);
+    width: 10%;
+}

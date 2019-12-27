@@ -1,7 +1,27 @@
 package com.stackroute.keepnote.controller;
 
 
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.servlet.ServletException;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.stackroute.keepnote.model.User;
 import com.stackroute.keepnote.service.UserAuthenticationService;
+
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
 
 /*
  * As in this assignment, we are working on creating RESTful web service, hence annotate
@@ -11,18 +31,22 @@ import com.stackroute.keepnote.service.UserAuthenticationService;
  * format. Starting from Spring 4 and above, we can use @RestController annotation which 
  * is equivalent to using @Controller and @ResposeBody annotation
  */
+@RestController
+@CrossOrigin(origins = {"*"})
 public class UserAuthenticationController {
 
-    /*
+	/*
 	 * Autowiring should be implemented for the UserAuthenticationService. (Use Constructor-based
 	 * autowiring) Please note that we should not create an object using the new
 	 * keyword
 	 */
+	@Autowired
+	UserAuthenticationService userAuthenticationServiceImpl;
 
-    public UserAuthenticationController(UserAuthenticationService authicationService) {
+	public UserAuthenticationController(UserAuthenticationService authicationService) {
+		this.userAuthenticationServiceImpl = authicationService;
 	}
-
-/*
+	/*
 	 * Define a handler method which will create a specific user by reading the
 	 * Serialized object from request body and save the user details in the
 	 * database. This handler method should return any one of the status messages
@@ -32,10 +56,17 @@ public class UserAuthenticationController {
 	 * 
 	 * This handler method should map to the URL "/api/v1/auth/register" using HTTP POST method
 	 */
+	@PostMapping("/api/v1/auth/register")
+	public ResponseEntity<String> addUser(@RequestBody User user){
 
-
-
-
+		try {
+			user.setUserAddedDate(new Date());
+			userAuthenticationServiceImpl.saveUser(user);
+			return new ResponseEntity<String>("User Created",HttpStatus.CREATED);
+		}catch (Exception e) {
+			return new ResponseEntity<String>("User Already Exist", HttpStatus.CONFLICT);
+		}
+	}
 	/* Define a handler method which will authenticate a user by reading the Serialized user
 	 * object from request body containing the username and password. The username and password should be validated 
 	 * before proceeding ahead with JWT token generation. The user credentials will be validated against the database entries. 
@@ -47,20 +78,44 @@ public class UserAuthenticationController {
 	 * 2. 401(UNAUTHORIZED) - If login is not successful
 	 * 
 	 * This handler method should map to the URL "/api/v1/auth/login" using HTTP POST method
-	*/
+	 */
+	@PostMapping("/api/v1/auth/login")
+	public ResponseEntity<?> loginUser(@RequestBody User user){
 
+		String jwToken = "";
+		Map<String, String> map = new HashMap<>();
+		try {
+			User userVo = userAuthenticationServiceImpl.findByUserIdAndPassword(user.getUserId(), user.getUserPassword());
 
+			if(null != userVo) {
+				jwToken = getToken(user.getUserId(), user.getUserPassword());
+				map.clear();
+				map.put("message", "User Successfully");
+				map.put("token", jwToken);
 
+				return new ResponseEntity<>(map,HttpStatus.OK);
+			}
+			return new ResponseEntity<String>("LogIn Failed",HttpStatus.UNAUTHORIZED);
 
-
-
-// Generate JWT token
+		}catch (Exception e) {
+			map.clear();
+			map.put("token", e.getMessage());
+			map.put("token", null);
+			return new ResponseEntity<String>("User not found",HttpStatus.UNAUTHORIZED);
+		}
+	}
+	// Generate JWT token
 	public String getToken(String username, String password) throws Exception {
-			
-        return null;
-        
-        
-}
 
+		if(null == username || null == password) {
+			throw new ServletException("Username or Password can't be Empty");
+		}
+		final long EXPIRATIONTIME = 40000000;
 
+		String jwToken = Jwts.builder().setSubject(username).setIssuedAt(new Date())
+				.setExpiration(new Date(System.currentTimeMillis()+EXPIRATIONTIME ))
+				.signWith(SignatureAlgorithm.HS256, "secretkey").compact();
+
+		return jwToken;
+	}
 }

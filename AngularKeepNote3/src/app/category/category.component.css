@@ -1,0 +1,22 @@
+.category-item{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+.button-css{
+    background-color: rgb(32, 144, 178);
+    width: 10%;
+  }
+  .category-expansion-form-fields{
+    margin-left: 40%;
+  }
+  .category-field{
+    width: 50%;
+  }
+  .button-edit{
+    background-color: rgb(32, 144, 178);
+    width: 10%;
+  }
+  .button-delete{
+    background-color: rgb(245, 15, 7);
+    width: 10%;
+  }

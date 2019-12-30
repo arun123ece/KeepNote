@@ -1,0 +1,514 @@
+2019-12-30 05:20:06 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper -
+				Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.stackroute.keepnote.test.controller.NoteControllerTest], using SpringBootContextLoader
+2019-12-30 05:20:06 [main] INFO  o.s.t.c.s.AbstractContextLoader -
+				Could not detect default resource locations for test class [com.stackroute.keepnote.test.controller.NoteControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-30 05:20:06 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils -
+				Could not detect default configuration classes for test class [com.stackroute.keepnote.test.controller.NoteControllerTest]: NoteControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-12-30 05:20:06 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Found @SpringBootConfiguration com.stackroute.keepnote.NoteServiceApplication for test class com.stackroute.keepnote.test.controller.NoteControllerTest
+2019-12-30 05:20:06 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper -
+				Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-12-30 05:20:06 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper -
+				Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4550bb58, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4ec4f3a0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@223191a6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@49139829, org.springframework.test.context.support.DirtiesContextTestExecutionListener@9597028, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6069db50, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4efbca5a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1b7cc17c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@59662a0b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@77fbd92c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@67c27493, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1a482e36]
+2019-12-30 05:20:06 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.stackroute.keepnote.test.log.LoggerTest], using SpringBootContextLoader
+2019-12-30 05:20:06 [main] INFO  o.s.t.c.s.AbstractContextLoader -
+				Could not detect default resource locations for test class [com.stackroute.keepnote.test.log.LoggerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-30 05:20:06 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils -
+				Could not detect default configuration classes for test class [com.stackroute.keepnote.test.log.LoggerTest]: LoggerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-12-30 05:20:06 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Found @SpringBootConfiguration com.stackroute.keepnote.NoteServiceApplication for test class com.stackroute.keepnote.test.log.LoggerTest
+2019-12-30 05:20:06 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-12-30 05:20:06 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1e683a3e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2053d869, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7a419da4, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@14555e0a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4bb33f74, org.springframework.test.context.transaction.TransactionalTestExecutionListener@759d26fb, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3c73951, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3d5c822d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6f46426d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@73700b80, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@49c7b90e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@10d307f1]
+2019-12-30 05:20:06 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.stackroute.keepnote.test.repository.NoteRepositoryTest], using SpringBootContextLoader
+2019-12-30 05:20:06 [main] INFO  o.s.t.c.s.AbstractContextLoader -
+				Could not detect default resource locations for test class [com.stackroute.keepnote.test.repository.NoteRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-30 05:20:06 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils -
+				Could not detect default configuration classes for test class [com.stackroute.keepnote.test.repository.NoteRepositoryTest]: NoteRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-12-30 05:20:06 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Found @SpringBootConfiguration com.stackroute.keepnote.NoteServiceApplication for test class com.stackroute.keepnote.test.repository.NoteRepositoryTest
+2019-12-30 05:20:06 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-12-30 05:20:06 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@48f278eb, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2f217633, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@a530d0a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1a18644, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5acf93bb, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7e7be63f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6cd28fa7, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@614ca7df, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4738a206, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@66d3eec0, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1e04fa0a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1af2d44a]
+2019-12-30 05:20:07 [main] INFO  o.s.w.c.s.GenericWebApplicationContext -
+				Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5b6ec132: startup date [Mon Dec 30 05:20:07 UTC 2019]; root of context hierarchy
+2019-12-30 05:20:09 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+				Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-30 05:20:10 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5b6ec132: startup date [Mon Dec 30 05:20:07 UTC 2019]; root of context hierarchy
+2019-12-30 05:20:10 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.createNote(com.stackroute.keepnote.model.Note)
+2019-12-30 05:20:10 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String,int)
+2019-12-30 05:20:10 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String)
+2019-12-30 05:20:10 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.updateNote(com.stackroute.keepnote.model.Note,java.lang.String,int)
+2019-12-30 05:20:10 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getAllNoteByUserId(java.lang.String)
+2019-12-30 05:20:10 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getNote(java.lang.String,int)
+2019-12-30 05:20:10 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-30 05:20:10 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-12-30 05:20:10 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-30 05:20:10 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+				Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-30 05:20:10 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext -
+				Initializing Spring FrameworkServlet ''
+2019-12-30 05:20:10 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization started
+2019-12-30 05:20:10 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization completed in 12 ms
+2019-12-30 05:20:10 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.createNote(com.stackroute.keepnote.model.Note)
+2019-12-30 05:20:10 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String,int)
+2019-12-30 05:20:10 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String)
+2019-12-30 05:20:10 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.updateNote(com.stackroute.keepnote.model.Note,java.lang.String,int)
+2019-12-30 05:20:10 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getAllNoteByUserId(java.lang.String)
+2019-12-30 05:20:10 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getNote(java.lang.String,int)
+2019-12-30 05:20:10 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@2b289ac9
+2019-12-30 05:20:10 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring FrameworkServlet ''
+2019-12-30 05:20:10 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization started
+2019-12-30 05:20:10 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization completed in 0 ms
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.createNote(com.stackroute.keepnote.model.Note)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.updateNote(com.stackroute.keepnote.model.Note,java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getAllNoteByUserId(java.lang.String)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getNote(java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@1907874b
+2019-12-30 05:20:11 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring FrameworkServlet ''
+2019-12-30 05:20:11 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization started
+2019-12-30 05:20:11 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization completed in 0 ms
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.createNote(com.stackroute.keepnote.model.Note)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.updateNote(com.stackroute.keepnote.model.Note,java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getAllNoteByUserId(java.lang.String)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getNote(java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@423b2b62
+2019-12-30 05:20:11 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring FrameworkServlet ''
+2019-12-30 05:20:11 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization started
+2019-12-30 05:20:11 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization completed in 1 ms
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.createNote(com.stackroute.keepnote.model.Note)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.updateNote(com.stackroute.keepnote.model.Note,java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getAllNoteByUserId(java.lang.String)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getNote(java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@77bb48d5
+2019-12-30 05:20:11 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring FrameworkServlet ''
+2019-12-30 05:20:11 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization started
+2019-12-30 05:20:11 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization completed in 0 ms
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.createNote(com.stackroute.keepnote.model.Note)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.updateNote(com.stackroute.keepnote.model.Note,java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getAllNoteByUserId(java.lang.String)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getNote(java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@3d0035d2
+2019-12-30 05:20:11 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring FrameworkServlet ''
+2019-12-30 05:20:11 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization started
+2019-12-30 05:20:11 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization completed in 0 ms
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.createNote(com.stackroute.keepnote.model.Note)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.updateNote(com.stackroute.keepnote.model.Note,java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getAllNoteByUserId(java.lang.String)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getNote(java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@79a04e5f
+2019-12-30 05:20:11 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring FrameworkServlet ''
+2019-12-30 05:20:11 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization started
+2019-12-30 05:20:11 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization completed in 0 ms
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.createNote(com.stackroute.keepnote.model.Note)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.updateNote(com.stackroute.keepnote.model.Note,java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getAllNoteByUserId(java.lang.String)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getNote(java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@1e9469b8
+2019-12-30 05:20:11 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring FrameworkServlet ''
+2019-12-30 05:20:11 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization started
+2019-12-30 05:20:11 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization completed in 0 ms
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.createNote(com.stackroute.keepnote.model.Note)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.updateNote(com.stackroute.keepnote.model.Note,java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getAllNoteByUserId(java.lang.String)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getNote(java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@26d41711
+2019-12-30 05:20:11 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring FrameworkServlet ''
+2019-12-30 05:20:11 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization started
+2019-12-30 05:20:11 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization completed in 0 ms
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.createNote(com.stackroute.keepnote.model.Note)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.updateNote(com.stackroute.keepnote.model.Note,java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getAllNoteByUserId(java.lang.String)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getNote(java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@23f86d8a
+2019-12-30 05:20:11 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring FrameworkServlet ''
+2019-12-30 05:20:11 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization started
+2019-12-30 05:20:11 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization completed in 0 ms
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.createNote(com.stackroute.keepnote.model.Note)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.updateNote(com.stackroute.keepnote.model.Note,java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getAllNoteByUserId(java.lang.String)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getNote(java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@1caa9eb6
+2019-12-30 05:20:11 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring FrameworkServlet ''
+2019-12-30 05:20:11 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization started
+2019-12-30 05:20:11 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization completed in 0 ms
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.createNote(com.stackroute.keepnote.model.Note)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.updateNote(com.stackroute.keepnote.model.Note,java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getAllNoteByUserId(java.lang.String)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getNote(java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@48a0c8aa
+2019-12-30 05:20:11 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring FrameworkServlet ''
+2019-12-30 05:20:11 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization started
+2019-12-30 05:20:11 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization completed in 0 ms
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.createNote(com.stackroute.keepnote.model.Note)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.updateNote(com.stackroute.keepnote.model.Note,java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getAllNoteByUserId(java.lang.String)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getNote(java.lang.String,int)
+2019-12-30 05:20:11 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@53c6f96d
+2019-12-30 05:20:11 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring FrameworkServlet ''
+2019-12-30 05:20:11 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization started
+2019-12-30 05:20:11 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization completed in 1 ms
+2019-12-30 05:20:11 [main] INFO  o.s.w.c.s.GenericWebApplicationContext -
+				Refreshing org.springframework.web.context.support.GenericWebApplicationContext@57435801: startup date [Mon Dec 30 05:20:11 UTC 2019]; root of context hierarchy
+2019-12-30 05:20:12 [main] INFO  d.f.e.process.runtime.ProcessControl -
+				stopOrDestroyProcess: process hasn't exited 
+2019-12-30 05:20:12 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				note: noprealloc may hurt performance in many applications
+2019-12-30 05:20:12 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:12.774+0000 I CONTROL  [initandlisten] MongoDB starting : pid=2879 port=38071 dbpath=/tmp/embedmongo-db-11aeac31-44aa-415a-90f5-07a948692cde 64-bit host=ip-172-31-34-12
+2019-12-30 05:20:12 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:12.774+0000 I CONTROL  [initandlisten] db version v3.2.2
+2019-12-30 05:20:12 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:12.774+0000 I CONTROL  [initandlisten] git version: 6e71d0d568e134c029203593b00a0103e7cdf30b
+2019-12-30 05:20:12 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:12.774+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2019-12-30 05:20:12 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:12.775+0000 I CONTROL  [initandlisten] modules: none
+2019-12-30 05:20:12 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:12.775+0000 I CONTROL  [initandlisten] build environment:
+2019-12-30 05:20:12 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:12.775+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2019-12-30 05:20:12 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:12.775+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-12-30 05:20:12 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:12.775+0000 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", http: { enabled: false }, port: 38071 }, security: { authorization: "disabled" }, storage: { dbPath: "/tmp/embedmongo-db-11aeac31-44aa-415a-90f5-07a948692cde", journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+2019-12-30 05:20:12 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:12.803+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=4G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),,log=(enabled=false),
+2019-12-30 05:20:12 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:12.862+0000 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2019-12-30 05:20:12 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:12.864+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/tmp/embedmongo-db-11aeac31-44aa-415a-90f5-07a948692cde/diagnostic.data'
+2019-12-30 05:20:12 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:12.865+0000 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2019-12-30 05:20:12 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:12.881+0000 I NETWORK  [initandlisten] waiting for connections on port 38071
+2019-12-30 05:20:12 [main] INFO  d.f.embed.process.runtime.Executable -
+				start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@58b311ba
+2019-12-30 05:20:13 [main] INFO  org.mongodb.driver.cluster -
+				Cluster created with settings {hosts=[localhost:38071], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-12-30 05:20:13 [main] INFO  org.mongodb.driver.cluster -
+				Adding discovered server localhost:38071 to client view of cluster
+2019-12-30 05:20:13 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:13.159+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:47106 #1 (1 connection now open)
+2019-12-30 05:20:13 [cluster-ClusterId{value='5e09890d2552fd0a9d881f2e', description='null'}-localhost:38071] INFO  org.mongodb.driver.connection -
+				Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:38071
+2019-12-30 05:20:13 [cluster-ClusterId{value='5e09890d2552fd0a9d881f2e', description='null'}-localhost:38071] INFO  org.mongodb.driver.cluster -
+				Monitor thread successfully connected to server with description ServerDescription{address=localhost:38071, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 2]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=1207782}
+2019-12-30 05:20:13 [cluster-ClusterId{value='5e09890d2552fd0a9d881f2e', description='null'}-localhost:38071] INFO  org.mongodb.driver.cluster -
+				Discovered cluster type of STANDALONE
+2019-12-30 05:20:13 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.createNote(com.stackroute.keepnote.model.Note)
+2019-12-30 05:20:13 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String,int)
+2019-12-30 05:20:13 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String)
+2019-12-30 05:20:13 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.updateNote(com.stackroute.keepnote.model.Note,java.lang.String,int)
+2019-12-30 05:20:13 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getAllNoteByUserId(java.lang.String)
+2019-12-30 05:20:13 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/note/{userId}/{noteId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.NoteController.getNote(java.lang.String,int)
+2019-12-30 05:20:13 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-12-30 05:20:13 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-12-30 05:20:13 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-12-30 05:20:13 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-30 05:20:13 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-12-30 05:20:14 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -
+				Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-12-30 05:20:14 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+				Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-30 05:20:14 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@57435801: startup date [Mon Dec 30 05:20:11 UTC 2019]; root of context hierarchy
+2019-12-30 05:20:14 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-30 05:20:14 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+				Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-30 05:20:14 [main] INFO  o.s.c.s.DefaultLifecycleProcessor -
+				Starting beans in phase 2147483647
+2019-12-30 05:20:14 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -
+				Context refreshed
+2019-12-30 05:20:14 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -
+				Found 1 custom documentation plugin(s)
+2019-12-30 05:20:14 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -
+				Scanning for api listing references
+2019-12-30 05:20:14 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+				Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@f76872f: startup date [Mon Dec 30 05:20:14 UTC 2019]; root of context hierarchy
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				note: noprealloc may hurt performance in many applications
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.021+0000 I CONTROL  [initandlisten] MongoDB starting : pid=2896 port=34163 dbpath=/tmp/embedmongo-db-9bc01432-395e-41a6-95fc-9debfdd8b9ca 64-bit host=ip-172-31-34-12
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.021+0000 I CONTROL  [initandlisten] db version v3.2.2
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.021+0000 I CONTROL  [initandlisten] git version: 6e71d0d568e134c029203593b00a0103e7cdf30b
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.021+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.021+0000 I CONTROL  [initandlisten] modules: none
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.021+0000 I CONTROL  [initandlisten] build environment:
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.021+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.021+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.021+0000 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", http: { enabled: false }, port: 34163 }, security: { authorization: "disabled" }, storage: { dbPath: "/tmp/embedmongo-db-9bc01432-395e-41a6-95fc-9debfdd8b9ca", journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.075+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=4G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),,log=(enabled=false),
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.156+0000 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.156+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/tmp/embedmongo-db-9bc01432-395e-41a6-95fc-9debfdd8b9ca/diagnostic.data'
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.165+0000 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.179+0000 I NETWORK  [initandlisten] waiting for connections on port 34163
+2019-12-30 05:20:15 [main] INFO  d.f.embed.process.runtime.Executable -
+				start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@fee881
+2019-12-30 05:20:15 [main] INFO  org.mongodb.driver.cluster -
+				Cluster created with settings {hosts=[localhost:34163], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-12-30 05:20:15 [main] INFO  org.mongodb.driver.cluster -
+				Adding discovered server localhost:34163 to client view of cluster
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.198+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57020 #1 (1 connection now open)
+2019-12-30 05:20:15 [cluster-ClusterId{value='5e09890f2552fd0a9d881f2f', description='null'}-localhost:34163] INFO  org.mongodb.driver.connection -
+				Opened connection [connectionId{localValue:2, serverValue:1}] to localhost:34163
+2019-12-30 05:20:15 [cluster-ClusterId{value='5e09890f2552fd0a9d881f2f', description='null'}-localhost:34163] INFO  org.mongodb.driver.cluster -
+				Monitor thread successfully connected to server with description ServerDescription{address=localhost:34163, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 2]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=2643707}
+2019-12-30 05:20:15 [cluster-ClusterId{value='5e09890f2552fd0a9d881f2f', description='null'}-localhost:34163] INFO  org.mongodb.driver.cluster -
+				Discovered cluster type of STANDALONE
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.365+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57022 #2 (2 connections now open)
+2019-12-30 05:20:15 [main] INFO  org.mongodb.driver.connection -
+				Opened connection [connectionId{localValue:3, serverValue:2}] to localhost:34163
+2019-12-30 05:20:15 [Thread-2] INFO  o.s.w.c.s.GenericWebApplicationContext -
+				Closing org.springframework.web.context.support.GenericWebApplicationContext@5b6ec132: startup date [Mon Dec 30 05:20:07 UTC 2019]; root of context hierarchy
+2019-12-30 05:20:15 [Thread-13] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+				Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@f76872f: startup date [Mon Dec 30 05:20:14 UTC 2019]; root of context hierarchy
+2019-12-30 05:20:15 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.572+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:47120 #2 (2 connections now open)
+2019-12-30 05:20:15 [Thread-8] INFO  o.s.w.c.s.GenericWebApplicationContext -
+				Closing org.springframework.web.context.support.GenericWebApplicationContext@57435801: startup date [Mon Dec 30 05:20:11 UTC 2019]; root of context hierarchy
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.573+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57026 #3 (3 connections now open)
+2019-12-30 05:20:15 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.575+0000 I COMMAND  [conn2] terminating, shutdown command received
+2019-12-30 05:20:15 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.575+0000 I FTDC     [conn2] Shutting down full-time diagnostic data capture
+2019-12-30 05:20:15 [Thread-8] INFO  o.s.c.s.DefaultLifecycleProcessor -
+				Stopping beans in phase 2147483647
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.580+0000 I COMMAND  [conn3] terminating, shutdown command received
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.580+0000 I FTDC     [conn3] Shutting down full-time diagnostic data capture
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.580+0000 I CONTROL  [conn3] now exiting
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.580+0000 I NETWORK  [conn3] shutdown: going to close listening sockets...
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.580+0000 I NETWORK  [conn3] closing listening socket: 5
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.580+0000 I NETWORK  [conn3] closing listening socket: 6
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.580+0000 I NETWORK  [conn3] removing socket file: /tmp/mongodb-34163.sock
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.580+0000 I NETWORK  [conn3] shutdown: going to flush diaglog...
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.580+0000 I NETWORK  [conn3] shutdown: going to close sockets...
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.580+0000 I STORAGE  [conn3] WiredTigerKVEngine shutting down
+2019-12-30 05:20:15 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.588+0000 I CONTROL  [conn2] now exiting
+2019-12-30 05:20:15 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.589+0000 I NETWORK  [conn2] shutdown: going to close listening sockets...
+2019-12-30 05:20:15 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.590+0000 I NETWORK  [conn2] closing listening socket: 5
+2019-12-30 05:20:15 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.590+0000 I NETWORK  [conn2] closing listening socket: 6
+2019-12-30 05:20:15 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.590+0000 I NETWORK  [conn2] removing socket file: /tmp/mongodb-38071.sock
+2019-12-30 05:20:15 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.590+0000 I NETWORK  [conn2] shutdown: going to flush diaglog...
+2019-12-30 05:20:15 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.590+0000 I NETWORK  [conn2] shutdown: going to close sockets...
+2019-12-30 05:20:15 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.591+0000 I STORAGE  [conn2] WiredTigerKVEngine shutting down
+2019-12-30 05:20:15 [Thread-13] INFO  org.mongodb.driver.connection -
+				Closed connection [connectionId{localValue:3, serverValue:2}] to localhost:34163 because the pool has been closed.
+2019-12-30 05:20:15 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.602+0000 I NETWORK  [conn1] end connection 127.0.0.1:47106 (1 connection now open)
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.605+0000 I NETWORK  [conn2] end connection 127.0.0.1:57022 (2 connections now open)
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.606+0000 I NETWORK  [conn1] end connection 127.0.0.1:57020 (1 connection now open)
+2019-12-30 05:20:15 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.613+0000 I STORAGE  [conn2] shutdown: removing fs lock...
+2019-12-30 05:20:15 [Thread-6] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.615+0000 I CONTROL  [conn2] dbexit:  rc: 0
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.621+0000 I STORAGE  [conn3] shutdown: removing fs lock...
+2019-12-30 05:20:15 [Thread-11] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:20:15.623+0000 I CONTROL  [conn3] dbexit:  rc: 0

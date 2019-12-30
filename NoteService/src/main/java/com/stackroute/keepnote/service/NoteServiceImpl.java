@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 import java.util.Random;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -156,7 +157,7 @@ public class NoteServiceImpl implements NoteService{
 	 */
 	public Note updateNote(Note note, int id, String userId) throws NoteNotFoundExeption {
 
-		if(null == userId || userId.isEmpty() && note.getNoteId() != id) {
+		/*if(null == userId || userId.isEmpty() && note.getNoteId() != id) {
 			return null;
 		}
 		try {
@@ -173,6 +174,33 @@ public class NoteServiceImpl implements NoteService{
 		} catch (Exception e) {
 			throw new NoteNotFoundExeption("NoteNotFoundExeption");
 		}
+		return note;*/
+		NoteUser noteUser = null;
+		if (note.getReminders() != null) {
+			note.getReminders().forEach(reminder -> {
+				if (reminder.getReminderId() == null) {
+					reminder.setReminderId(UUID.randomUUID().toString());
+				}
+			});
+		}
+		try {
+			noteUser = noteRepositoryImpl.findById(userId).get();
+		} catch (NoSuchElementException e) {
+			e.printStackTrace();
+		}
+		if (noteUser != null) {
+			List<Note> notes = noteUser.getNotes();
+			Note fetchedNote = notes.stream().filter(notefilter -> notefilter.getNoteId() == id).findFirst()
+					.orElse(null);
+			if (note != null) {
+				noteUser.getNotes().remove(fetchedNote);
+				noteUser.getNotes().add(note);
+				noteRepositoryImpl.save(noteUser);
+			}
+		} else {
+			throw new NoteNotFoundExeption("Not found");
+		}
+
 		return note;
 	}
 

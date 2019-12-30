@@ -1,0 +1,100 @@
+2019-12-30 05:47:29 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.stackroute.keepnote.test.repository.CategoryRepositoryTest], using SpringBootContextLoader
+2019-12-30 05:47:29 [main] INFO  o.s.t.c.s.AbstractContextLoader -
+				Could not detect default resource locations for test class [com.stackroute.keepnote.test.repository.CategoryRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-30 05:47:29 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils -
+				Could not detect default configuration classes for test class [com.stackroute.keepnote.test.repository.CategoryRepositoryTest]: CategoryRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-12-30 05:47:29 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Found @SpringBootConfiguration com.stackroute.keepnote.CategoryServiceApplication for test class com.stackroute.keepnote.test.repository.CategoryRepositoryTest
+2019-12-30 05:47:29 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-12-30 05:47:29 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1ea9f6af, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6a192cfe, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5119fb47, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7193666c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@20deea7f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3835c46, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1dde4cb2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7714e963, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@20ce78ec, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@393671df, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@56620197, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6eda5c9]
+2019-12-30 05:47:30 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+				Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4bff7da0: startup date [Mon Dec 30 05:47:30 UTC 2019]; root of context hierarchy
+2019-12-30 05:47:33 [main] INFO  d.f.e.process.runtime.ProcessControl -
+				stopOrDestroyProcess: process hasn't exited 
+2019-12-30 05:47:33 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				note: noprealloc may hurt performance in many applications
+2019-12-30 05:47:33 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:33.663+0000 I CONTROL  [initandlisten] MongoDB starting : pid=14653 port=27017 dbpath=/tmp/embedmongo-db-fa8853bb-2e52-4e76-9421-d34cfe60bf25 64-bit host=ip-172-31-34-12
+2019-12-30 05:47:33 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:33.663+0000 I CONTROL  [initandlisten] db version v3.2.2
+2019-12-30 05:47:33 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:33.663+0000 I CONTROL  [initandlisten] git version: 6e71d0d568e134c029203593b00a0103e7cdf30b
+2019-12-30 05:47:33 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:33.663+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2019-12-30 05:47:33 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:33.663+0000 I CONTROL  [initandlisten] modules: none
+2019-12-30 05:47:33 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:33.663+0000 I CONTROL  [initandlisten] build environment:
+2019-12-30 05:47:33 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:33.663+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2019-12-30 05:47:33 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:33.663+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-12-30 05:47:33 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:33.663+0000 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", http: { enabled: false }, port: 27017 }, security: { authorization: "disabled" }, storage: { dbPath: "/tmp/embedmongo-db-fa8853bb-2e52-4e76-9421-d34cfe60bf25", journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+2019-12-30 05:47:33 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:33.694+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=4G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),,log=(enabled=false),
+2019-12-30 05:47:33 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:33.753+0000 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2019-12-30 05:47:33 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:33.755+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/tmp/embedmongo-db-fa8853bb-2e52-4e76-9421-d34cfe60bf25/diagnostic.data'
+2019-12-30 05:47:33 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:33.755+0000 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2019-12-30 05:47:33 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:33.772+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+2019-12-30 05:47:33 [main] INFO  d.f.embed.process.runtime.Executable -
+				start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@70925b45
+2019-12-30 05:47:34 [main] INFO  org.mongodb.driver.cluster -
+				Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-12-30 05:47:34 [main] INFO  org.mongodb.driver.cluster -
+				Adding discovered server localhost:27017 to client view of cluster
+2019-12-30 05:47:34 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:34.124+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:42050 #1 (1 connection now open)
+2019-12-30 05:47:34 [cluster-ClusterId{value='5e098f762552fd391db631b6', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -
+				Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:27017
+2019-12-30 05:47:34 [cluster-ClusterId{value='5e098f762552fd391db631b6', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -
+				Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 2]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=1000037}
+2019-12-30 05:47:34 [cluster-ClusterId{value='5e098f762552fd391db631b6', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -
+				Discovered cluster type of STANDALONE
+2019-12-30 05:47:34 [main] WARN  o.s.d.m.c.m.BasicMongoPersistentProperty -
+				Customizing field name for id property not allowed! Custom name will not be considered!
+2019-12-30 05:47:35 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:35.012+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:42064 #2 (2 connections now open)
+2019-12-30 05:47:35 [main] INFO  org.mongodb.driver.connection -
+				Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:27017
+2019-12-30 05:47:35 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:35.115+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:42066 #3 (3 connections now open)
+2019-12-30 05:47:35 [Thread-6] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+				Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@4bff7da0: startup date [Mon Dec 30 05:47:30 UTC 2019]; root of context hierarchy
+2019-12-30 05:47:35 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:35.129+0000 I COMMAND  [conn3] terminating, shutdown command received
+2019-12-30 05:47:35 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:35.129+0000 I FTDC     [conn3] Shutting down full-time diagnostic data capture
+2019-12-30 05:47:35 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:35.131+0000 I CONTROL  [conn3] now exiting
+2019-12-30 05:47:35 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:35.131+0000 I NETWORK  [conn3] shutdown: going to close listening sockets...
+2019-12-30 05:47:35 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:35.131+0000 I NETWORK  [conn3] closing listening socket: 5
+2019-12-30 05:47:35 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:35.131+0000 I NETWORK  [conn3] closing listening socket: 6
+2019-12-30 05:47:35 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:35.131+0000 I NETWORK  [conn3] removing socket file: /tmp/mongodb-27017.sock
+2019-12-30 05:47:35 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:35.131+0000 I NETWORK  [conn3] shutdown: going to flush diaglog...
+2019-12-30 05:47:35 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:35.131+0000 I NETWORK  [conn3] shutdown: going to close sockets...
+2019-12-30 05:47:35 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:35.131+0000 I STORAGE  [conn3] WiredTigerKVEngine shutting down
+2019-12-30 05:47:35 [Thread-6] INFO  org.mongodb.driver.connection -
+				Closed connection [connectionId{localValue:2, serverValue:2}] to localhost:27017 because the pool has been closed.
+2019-12-30 05:47:35 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:35.137+0000 I NETWORK  [conn2] end connection 127.0.0.1:42064 (2 connections now open)
+2019-12-30 05:47:35 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:35.138+0000 I NETWORK  [conn1] end connection 127.0.0.1:42050 (1 connection now open)
+2019-12-30 05:47:35 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:35.152+0000 I STORAGE  [conn3] shutdown: removing fs lock...
+2019-12-30 05:47:35 [Thread-4] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2019-12-30T05:47:35.152+0000 I CONTROL  [conn3] dbexit:  rc: 0

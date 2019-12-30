@@ -1,6 +1,7 @@
 package com.stackroute.keepnote.service;
 
 import java.util.Date;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -34,7 +35,7 @@ public class UserServiceImpl implements UserService {
 	 */
 	@Autowired
 	UserRepository userRepository;
-	
+
 	/*public User registerUser(User user) throws UserAlreadyExistsException {
 
 		try {
@@ -49,14 +50,14 @@ public class UserServiceImpl implements UserService {
 		}
 	}*/
 	public User registerUser(User user) throws UserAlreadyExistsException {
-        User savedUser = null;
+		/*User savedUser = null;
         user.setUserAddedDate(new Date());
         try {
 			savedUser = userRepository.insert(user);
 		} catch (Exception e) {
 			throw new UserAlreadyExistsException("User with ID" + user.getUserId() + "already exists");
 		}
-        /*if (userRepository.existsById(user.getUserId())) {
+        if (userRepository.existsById(user.getUserId())) {
             throw new UserAlreadyExistsException("User with ID" + user.getUserId() + "already exists");
         } else {
             user.setUserAddedDate(new Date());
@@ -64,9 +65,22 @@ public class UserServiceImpl implements UserService {
             if (savedUser == null) {
                 throw new UserAlreadyExistsException("User with ID" + user.getUserId() + "already exists");
             }
-        }*/
-        return savedUser;
-    }
+        }
+        return savedUser;*/
+		/*user.setUserAddedDate(new Date());
+		return Optional.ofNullable(userRepository.insert(user))
+				.orElseThrow(() -> new UserAlreadyExistsException("Not created"));*/
+		if (userRepository.existsById(user.getUserId())) {
+			throw new UserAlreadyExistsException("");
+		} else {
+			user.setUserAddedDate(new Date());
+			User user2 = userRepository.insert(user);
+			if (user2 == null) {
+				throw new UserAlreadyExistsException("");
+			}
+			return user2;
+		}
+	}
 
 	/*
 	 * This method should be used to update a existing user.Call the corresponding
@@ -81,8 +95,10 @@ public class UserServiceImpl implements UserService {
 		try {
 			getUserById(userId);
 			user.setUserAddedDate(new Date());
-			User userVo = userRepository.save(user);
-			return userVo;
+			userRepository.save(user);
+			/*User userVo = userRepository.save(user);
+			return userVo;*/
+			return user;
 		} catch (Exception e) {
 			throw new UserNotFoundException("UserNotFoundException");
 		}
@@ -123,7 +139,7 @@ public class UserServiceImpl implements UserService {
 				return null;
 			}
 			return user.get();*/
-		//	return userRepository.findById(userId).get();
+			//	return userRepository.findById(userId).get();
 		} catch (Exception e) {
 			throw new UserNotFoundException("UserNotFoundException");
 		}

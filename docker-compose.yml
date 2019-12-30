@@ -73,6 +73,7 @@ services:
       
   user-service:
     image: userservice
+    build: ./UserService
     restart: always
     network_mode: host
     depends_on:

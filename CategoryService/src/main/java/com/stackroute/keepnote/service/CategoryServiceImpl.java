@@ -91,8 +91,9 @@ public class CategoryServiceImpl implements CategoryService {
 		try {
 			if(null != getCategoryById(categoryId)) {
 				category.setCategoryCreationDate(new Date());
-				Category category1 = categoryRepositoryImpl.save(category);
-				return category1;
+				/*Category category1 = categoryRepositoryImpl.save(category);
+				return category1;*/
+				return category;
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

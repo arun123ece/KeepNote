@@ -2,6 +2,8 @@ package com.stackroute.keepnote.controller;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,6 +16,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.stackroute.keepnote.aspectj.LoggingAspect;
 import com.stackroute.keepnote.model.Reminder;
 import com.stackroute.keepnote.service.ReminderService;
 
@@ -50,6 +53,8 @@ public class ReminderController {
 	 */
 	@Autowired
 	ReminderService reminderServiceImpl;
+	
+	private static Logger logger = LoggerFactory.getLogger(LoggingAspect.class);
 
 	public ReminderController(ReminderService reminderService) {
 		this.reminderServiceImpl = reminderService;
@@ -70,6 +75,7 @@ public class ReminderController {
 	@PostMapping("/api/v1/reminder")
 	public ResponseEntity<?> createReminder(@RequestBody Reminder reminder){
 
+		logger.info("ReminderController :: createReminder() ");
 		try {
 			return new ResponseEntity<Reminder>(reminderServiceImpl.createReminder(reminder), HttpStatus.CREATED);
 
@@ -92,6 +98,7 @@ public class ReminderController {
 	@DeleteMapping("/api/v1/reminder/{id}")
 	public ResponseEntity<?> deleteReminder(@PathVariable String id){
 
+		logger.info("ReminderController :: deleteReminder() ");
 		try {
 			if(reminderServiceImpl.deleteReminder(id)) {
 				return new ResponseEntity<String>("Reminder Deleted", HttpStatus.OK);
@@ -116,6 +123,7 @@ public class ReminderController {
 	@PutMapping("/api/v1/reminder/{id}")
 	public ResponseEntity<?> updateReminder(@RequestBody Reminder reminder, @PathVariable String id){
 
+		logger.info("ReminderController :: updateReminder() ");
 		try {
 			if(null != reminderServiceImpl.updateReminder(reminder, id)) {
 				return new ResponseEntity<Reminder>(reminder, HttpStatus.OK);
@@ -141,6 +149,7 @@ public class ReminderController {
 	@GetMapping("/api/v1/reminder")
 	public ResponseEntity<?> getReminder(){
 
+		logger.info("ReminderController :: getReminder() ");
 		try {
 			List<Reminder> reminderList = reminderServiceImpl.getAllReminders();
 			return new ResponseEntity<List<Reminder>>(reminderList, HttpStatus.OK);
@@ -162,6 +171,7 @@ public class ReminderController {
 	@GetMapping("/api/v1/reminder/{id}")
 	public ResponseEntity<?> getReminderById(@PathVariable String id){
 
+		logger.info("ReminderController :: getReminderById() ");
 		try {
 			Reminder reminder =  reminderServiceImpl.getReminderById(id);
 			if(null != reminder) {

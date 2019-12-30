@@ -4,6 +4,8 @@ import java.util.Date;
 
 import javax.servlet.http.HttpSession;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +18,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.stackroute.keepnote.aspectj.LoggingAspect;
 import com.stackroute.keepnote.exceptions.UserAlreadyExistsException;
 import com.stackroute.keepnote.model.User;
 import com.stackroute.keepnote.service.UserService;
@@ -43,6 +46,7 @@ public class UserController {
 	public UserController(UserService userService) {
 		this.userServiceImpl = userService;
 	}
+	private static Logger logger = LoggerFactory.getLogger(LoggingAspect.class);
 
 	/*
 	 * Define a handler method which will create a specific user by reading the
@@ -57,6 +61,7 @@ public class UserController {
 	@PostMapping("/api/v1/user")
 	public ResponseEntity<User> registerUser(@RequestBody User user, HttpSession session){
 
+		logger.info("UserController :: registerUser() ");
 		try {
 			user.setUserAddedDate(new Date());
 			User userVo = userServiceImpl.registerUser(user);
@@ -79,6 +84,7 @@ public class UserController {
 	@PutMapping("/api/v1/user/{id}")
 	public ResponseEntity<?> updateUser(@RequestBody User user){
 
+		logger.info("UserController :: updateUser() ");
 		try {
 			if(null != userServiceImpl.updateUser(user.getUserId(), user)) {
 				return new ResponseEntity<User>(user, HttpStatus.OK);
@@ -104,6 +110,7 @@ public class UserController {
 	@DeleteMapping("/api/v1/user/{id}")
 	public ResponseEntity<?> deleteUser(@PathVariable String id){
 
+		logger.info("UserController :: deleteUser() ");
 		try {
 			if(userServiceImpl.deleteUser(id) ) {
 				return new ResponseEntity<String>("User Deleted", HttpStatus.OK);
@@ -126,6 +133,7 @@ public class UserController {
 	@GetMapping("/api/v1/user/{id}")
 	public ResponseEntity<?> findUser(@PathVariable String id){
 
+		logger.info("UserController :: findUser() ");
 		try {
 			User user = userServiceImpl.getUserById(id);
 			if(null != user) {

@@ -2,6 +2,8 @@ package com.stackroute.keepnote.controller;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.stackroute.keepnote.aspectj.LoggingAspect;
 import com.stackroute.keepnote.model.Category;
 import com.stackroute.keepnote.service.CategoryService;
 
@@ -37,6 +40,8 @@ public class CategoryController {
 	 */
 	@Autowired
 	CategoryService categoryServiceImpl; 
+	
+	private static Logger logger = LoggerFactory.getLogger(LoggingAspect.class);
 
 	/*
 	 * Define a handler method which will create a category by reading the
@@ -54,6 +59,7 @@ public class CategoryController {
 	@PostMapping("/api/v1/category")
 	public ResponseEntity<?> createCategory(@RequestBody Category category){
 
+		logger.info("CategoryController :: createCategory() ");
 		try {
 			Category category1 = categoryServiceImpl.createCategory(category);
 			if(null != category1){
@@ -80,6 +86,7 @@ public class CategoryController {
 	@DeleteMapping("/api/v1/category/{id}")
 	public ResponseEntity<?> deleteCategory(@PathVariable String id){
 
+		logger.info("CategoryController :: deleteCategory() ");
 		try {
 			if(categoryServiceImpl.deleteCategory(id)) {
 				return new ResponseEntity<String>("Category Deleted", HttpStatus.OK);
@@ -102,6 +109,7 @@ public class CategoryController {
 	@PutMapping("/api/v1/category/{id}")
 	public ResponseEntity<?> updateCategory(@RequestBody Category category, @PathVariable String id){
 
+		logger.info("CategoryController :: updateCategory() ");
 		try {
 			Category category1 = categoryServiceImpl.updateCategory(category, id);
 			if(null != category1) {
@@ -126,6 +134,7 @@ public class CategoryController {
 	@GetMapping("/api/v1/category")
 	public ResponseEntity<?> getCategory(@RequestParam String userId){
 
+		logger.info("CategoryController :: getCategory() ");
 		try {
 			List<Category> categoryList = categoryServiceImpl.getAllCategoryByUserId(userId);
 			return new ResponseEntity<List<Category>>(categoryList, HttpStatus.OK);
@@ -137,6 +146,7 @@ public class CategoryController {
 	@GetMapping("/api/v1/category/{id}")
 	public ResponseEntity<?> getCategoryById(@PathVariable String id){
 
+		logger.info("CategoryController :: getCategoryById() ");
 		try {
 			Category category = categoryServiceImpl.getCategoryById(id);
 			return new ResponseEntity<Category>(category, HttpStatus.OK);

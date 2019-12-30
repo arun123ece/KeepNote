@@ -2,6 +2,8 @@ package com.stackroute.keepnote.controller;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,6 +16,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.stackroute.keepnote.aspectj.LoggingAspect;
 import com.stackroute.keepnote.model.Note;
 import com.stackroute.keepnote.service.NoteService;
 
@@ -36,6 +39,8 @@ public class NoteController {
 	 */
 	@Autowired
 	NoteService noteServiceImpl;
+	
+	private static Logger logger = LoggerFactory.getLogger(LoggingAspect.class);
 
 	public NoteController(NoteService noteService) {
 		this.noteServiceImpl = noteService;
@@ -54,6 +59,7 @@ public class NoteController {
 	@PostMapping("/api/v1/note")
 	public ResponseEntity<?> createNote(@RequestBody Note note){
 
+		logger.info("NoteController :: createNote() ");
 		try {
 			if(noteServiceImpl.createNote(note)){
 				return new ResponseEntity<Note>(note, HttpStatus.CREATED);
@@ -78,6 +84,7 @@ public class NoteController {
 	@DeleteMapping("/api/v1/note/{userId}/{noteId}")
 	public ResponseEntity<?> deleteNote(@PathVariable String userId, @PathVariable int noteId){
 
+		logger.info("NoteController :: deleteNote() ");
 		try {
 			if(noteServiceImpl.deleteNote(userId, noteId)) {
 				return new ResponseEntity<String>("Note Deleted", HttpStatus.OK);
@@ -90,6 +97,7 @@ public class NoteController {
 	@DeleteMapping("/api/v1/note/{userId}")
 	public ResponseEntity<?> deleteNote(@PathVariable String userId){
 
+		logger.info("NoteController :: deleteNote() ");
 		try {
 			if(noteServiceImpl.deleteAllNotes(userId)) {
 				return new ResponseEntity<String>("Note Deleted", HttpStatus.OK);
@@ -114,6 +122,7 @@ public class NoteController {
 	@PutMapping("/api/v1/note/{userId}/{noteId}")
 	public ResponseEntity<?> updateNote(@RequestBody Note note, @PathVariable String userId, @PathVariable int noteId){
 
+		logger.info("NoteController :: updateNote() ");
 		try {
 			if(null != noteServiceImpl.updateNote(note, noteId, userId)) {
 				return new ResponseEntity<Note>(note, HttpStatus.OK);
@@ -137,6 +146,7 @@ public class NoteController {
 	@GetMapping("/api/v1/note/{userId}")
 	public ResponseEntity<?> getAllNoteByUserId(@PathVariable String userId){
 
+		logger.info("NoteController :: getAllNoteByUserId() ");
 		try {
 			List<Note> noteList = noteServiceImpl.getAllNoteByUserId(userId);
 			return new ResponseEntity<List<Note>>(noteList, HttpStatus.OK);

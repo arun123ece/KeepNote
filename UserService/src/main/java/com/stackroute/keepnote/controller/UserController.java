@@ -46,7 +46,7 @@ public class UserController {
 	public UserController(UserService userService) {
 		this.userServiceImpl = userService;
 	}
-	private static Logger logger = LoggerFactory.getLogger(LoggingAspect.class);
+	private static Logger logger = LoggerFactory.getLogger(UserController.class);
 
 	/*
 	 * Define a handler method which will create a specific user by reading the

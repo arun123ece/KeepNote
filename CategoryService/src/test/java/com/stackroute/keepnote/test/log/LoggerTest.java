@@ -24,7 +24,7 @@ import ch.qos.logback.core.joran.util.ConfigurationWatchListUtil;
 @SpringBootTest
 public class LoggerTest {
 
-	@Test
+/*	@Test
 	public void logBackXMLFileCreatedOrNotTestCase() {
 		ClassLoader classLoader = getClass().getClassLoader();
 		File logFile = new File(classLoader.getResource("logback.xml").getFile());
@@ -32,7 +32,7 @@ public class LoggerTest {
 
 	}
 
-	/*@Test
+	@Test
 	public void logFileGeneratedOrNotTestCase() throws ParserConfigurationException, SAXException, IOException {
 		LoggerContext context = (LoggerContext) LoggerFactory.getILoggerFactory();
 		File logFile = ConfigurationWatchListUtil.getConfigurationWatchList(context).getCopyOfFileWatchList().get(0);

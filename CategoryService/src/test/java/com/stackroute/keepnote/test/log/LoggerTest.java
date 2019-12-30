@@ -24,7 +24,7 @@ import ch.qos.logback.core.joran.util.ConfigurationWatchListUtil;
 @SpringBootTest
 public class LoggerTest {
 
-/*	@Test
+	@Test
 	public void logBackXMLFileCreatedOrNotTestCase() {
 		ClassLoader classLoader = getClass().getClassLoader();
 		File logFile = new File(classLoader.getResource("logback.xml").getFile());
@@ -74,5 +74,5 @@ public class LoggerTest {
 		assertNotNull("Log file not generated.  please check logback.xml file", clientLogFile);
 
 		Assert.assertNotEquals("Log file is created but it is empty", 0, clientLogFile.length());
-	}*/
+	}
 }

@@ -5,18 +5,14 @@ import static org.junit.Assert.assertNotNull;
 import java.io.File;
 import java.io.IOException;
 import java.util.Iterator;
-
 import javax.xml.parsers.ParserConfigurationException;
-
 import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.xml.sax.SAXException;
-
 import ch.qos.logback.classic.Logger;
 import ch.qos.logback.classic.LoggerContext;
 import ch.qos.logback.classic.spi.ILoggingEvent;
@@ -29,7 +25,6 @@ import ch.qos.logback.core.joran.util.ConfigurationWatchListUtil;
 public class LoggerTest {
 
 	@Test
-	@Ignore
 	public void logBackXMLFileCreatedOrNotTestCase() {
 		ClassLoader classLoader = getClass().getClassLoader();
 		File logFile = new File(classLoader.getResource("logback.xml").getFile());
@@ -38,7 +33,6 @@ public class LoggerTest {
 	}
 
 	@Test
-	@Ignore
 	public void logFileGeneratedOrNotTestCase() throws ParserConfigurationException, SAXException, IOException {
 		LoggerContext context = (LoggerContext) LoggerFactory.getILoggerFactory();
 		File logFile = ConfigurationWatchListUtil.getConfigurationWatchList(context).getCopyOfFileWatchList().get(0);
@@ -60,7 +54,6 @@ public class LoggerTest {
 	}
 
 	@Test
-	@Ignore
 	public void logggedTheMessagesInFileOrNotTestCase() throws ParserConfigurationException, SAXException, IOException {
 		LoggerContext context = (LoggerContext) LoggerFactory.getILoggerFactory();
 		File logFile = ConfigurationWatchListUtil.getConfigurationWatchList(context).getCopyOfFileWatchList().get(0);

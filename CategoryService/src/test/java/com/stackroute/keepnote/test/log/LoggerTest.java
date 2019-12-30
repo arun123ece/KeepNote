@@ -53,7 +53,7 @@ public class LoggerTest {
 		assertNotNull("Log file not generated.  please check logback.xml file", clientLogFile);
 	}
 
-	/*@Test
+	@Test
 	public void logggedTheMessagesInFileOrNotTestCase() throws ParserConfigurationException, SAXException, IOException {
 		LoggerContext context = (LoggerContext) LoggerFactory.getILoggerFactory();
 		File logFile = ConfigurationWatchListUtil.getConfigurationWatchList(context).getCopyOfFileWatchList().get(0);
@@ -74,5 +74,5 @@ public class LoggerTest {
 		assertNotNull("Log file not generated.  please check logback.xml file", clientLogFile);
 
 		Assert.assertNotEquals("Log file is created but it is empty", 0, clientLogFile.length());
-	}*/
+	}
 }

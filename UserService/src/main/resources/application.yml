@@ -4,7 +4,8 @@ spring:
 #      authentication-database: dbAdmin
 #      username: ${MONGO_USERNAME}
 #      password: ${MONGO_PASSWORD}
-      database: UserServiceDB
+#      database: UserServiceDB
+      database: test
       port: 27017
       host: localhost
   application:

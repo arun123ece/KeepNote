@@ -4,7 +4,8 @@ spring:
  #     authentication-database:
 #      username: ${MONGO_USERNAME}
 #      password: ${MONGO_PASSWORD}
-      database: CategoryServiceDB
+#      database: CategoryServiceDB
+      database: test
       port: 27017
       host: localhost
   application:
